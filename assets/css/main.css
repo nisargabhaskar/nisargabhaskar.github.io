@@ -2279,3 +2279,69 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+/* Center the entire pomodoro container */
+#pomodoro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;   
+}
+
+/* Clock container */
+#clock {
+    width: 400px;
+    height: 250px;
+    background: #fff;
+    border-radius: 12px;
+    border: 8px solid #f56a6a;
+    box-shadow: 0 4px 20px #f56a6a;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+}
+
+/* Timer text inside clock */
+#timer {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+#title {
+    margin-bottom: 10px;
+}
+
+/* Countdown numbers */
+#countdown {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Controls layout */
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#controls div {
+    padding: 5px 8px;
+    border-radius: 6px;
+    background: #f2f2f2;
+    transition: 0.2s ease;
+}
+
+#controls div:hover {
+    background: #ddd;
+}
+
+/* Hide options below the clock */
+#options {
+    display: none;
+}
