@@ -1,226 +1,732 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nisarga Bhaskar — Software Engineer & AI/ML Enthusiast</title>
+  <meta name="description" content="CS grad student at USC | Former Software Engineer at JP Morgan Chase | AI/ML, Systems, Software Engineering" />
 
-<html>
-	<head>
-		<title>Nisarga Bhaskar</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+  <!-- Our design system -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo">Nisarga Bhaskar </a>
-									<ul class="icons">
-										<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-										<li><a href="https://www.linkedin.com/in/nisargabhaskar/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-										<!-- <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li> -->
-										<li><a href="https://www.instagram.com/nisarga.bhaskar/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="https://github.com/nisargabhaskar" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-								</header>
+<!-- ── NAVIGATION ─────────────────────────── -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo">Nisarga</a>
 
-							<!-- Banner -->
-								
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Hi, I’m Nisarga</h1>
-											<p>It's simply lovely to meet you</p>
-										</header>
-										<p>
-											I am a Masters student at University of Southern California, majoring in Computer Science. I am passionate about technology and its ability to transform lives.
-											I have worked at JP Morgan Chase as a Software Engineer before this and developed some cool projects in AI/ML along the way(at least cool according to me :) )
-										</p>
-										<p>
-											When I am not coding(which is not so rare),</br>
-											I love capturing moments through my lens, experimenting in the kitchen, bringing color to canvas, and getting lost in a good book.
-											oh I also love to travel!! explore new places, try out different cuisines (despite my appetite challenges) and meet new people.
-											I cant believe I am saying this but I have come to enjoy playing sports too! (mainly badminton) all due credits to my dearest friends
-										</p>
-										<p>This is going to be my attempt to keep track of all my small and large milestone/achievements </br>
-											For you it would be a peek into my life and for me it would be a way to cherish all the beautiful moments
-										</p>
-									</div>
-									<span class="image object">
-										<img src="images/profilepic.jpeg" 
-     alt="Profile Picture" 
-     style="width: 100%; height: 80%; object-fit: cover; border-radius: 10px;">
+  <ul class="nav-links" role="list">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <a href="https://drive.google.com/file/d/1raFfLiMmE6HdtcIfoRST18NXrPZxquO0/view?usp=drive_link"
+         target="_blank" rel="noopener" class="nav-resume">
+        Resume <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.7rem;"></i>
+      </a>
+    </li>
+  </ul>
 
-									</span>
-								</section>
+  <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>My Projects</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon solid fa-wave-square"></span>
-											<div class="content">
-												<h3>AURA</h3>
-												<p>I built an AI-powered RAN analytics platform using Cloudflare Workers, Durable Objects, and D1. 
-													The system continuously logs network KPIs such as latency, throughput, and congestion, storing thousands of records for real-time analysis. 
-													By integrating Meta’s Llama 3.3 model, it allows users to query the data conversationally and instantly getting an AI-generated insight. </p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-robot"></span>
-											<div class="content">
-												<h3>SCRUB</h3>
-												<p>I developed a reinforcement learning agent using Deep Q-Networks (DQN) in Python to simulate autonomous navigation within a customizable GridWorld environment. The project modeled real-world decision-making in dynamic, driving-like scenarios</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-dna"></span>
-											<div class="content">
-												<h3>Rare disease prediction</h3>
-												<p>I developed a hypergraph-based methodology to prioritize genes based on patient symptoms and predict rare diseases. This work was recognized as the Best Capstone Project at PES University and published in Scientific Reports.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-network-wired"></span>
-											<div class="content">
-												<h3>YAK</h3>
-												<p>I built a high-performance messaging system using a Producer–Subscriber architecture to simulate large-scale market data streaming and real-time event processing. The system is designed for low latency and fault tolerance, ensuring reliable performance under heavy loads.</p>
-											</div>
-										</article>
-									</div>
-								</section>
+<!-- ── HERO ───────────────────────────────── -->
+<div id="hero">
+  <div class="hero-content">
+    <p class="hero-greeting">Hi Guys!!</p>
+    <h1 class="hero-name">I'm Nisarga Bhaskar</h1>
+    <p class="hero-title">
+      <span class="hero-title-typed"></span><span style="color:var(--accent);animation:blink 1s step-end infinite;">|</span>
+    </p>
+    <p class="hero-tagline">
+        Building intelligent systems at the intersection of AI, machine learning, and distributed systems. Currently pursuing my MS in Computer Science at USC.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        Explore my work <i class="fa-solid fa-arrow-down"></i>
+      </a>
+      <a href="#contact" class="btn-outline">
+        Get in touch
+      </a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/nisargabhaskar/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/nisargabhaskar" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="mailto:nisarga.bhaskar02@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/nisarga.bhaskar/" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </div>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>My Blogs</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/MeJPMC.jpeg" alt=""  style="width: 100%; height: 80%; object-fit: cover; border-radius: 10px;"/></a>
-											<h3>My Time at JP</h3>
-											<p>At JP Morgan Chase & Co., I contributed across multiple roles in Commercial & Investment Banking and Global Technology, driving automation, scalability, and efficiency.
-											</br>As a SDE 1, I built  multi-agentic LLM framework to automate SQL query generation, database utilization forecasting pipelines on AWS and real-time anomaly detection models.
-											</br>During my Internship, I designed and developed an NLP-driven service to categorize support tickets and provide automated recommendations(this was recognized at DEVUP).</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/MeUSC.JPG" alt=""  style="width: 100%; height: 2%; object-fit: cover; border-radius: 10px;"/></a>
-											<h3>Reached USC!!</h3>
-											<p>I just joined USC as a Master’s student in Computer Science, and I can’t believe it’s already been two months! It’s been a whirlwind of learning, meeting amazing people, and diving into projects that are both challenging and super exciting.</p>
-										</article>
-									</div>
-								</section>
+  <div class="hero-image">
+    <div class="hero-image-wrap">
+      <img src="images/profilepic.jpeg" alt="Nisarga Bhaskar" loading="eager" />
+    </div>
+  </div>
+</div>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>My Publications</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="https://doi.org/10.1038/s41598-025-04428-z" class="image"><img src="images/hypergraph.png" alt=""  style="width: 100%; height: 80%; object-fit: cover; border-radius: 10px;"/></a>
-											<h3>A Hypergraph powered approach to Phenotype-driven Gene Prioritization and Rare Disease Prediction</h3>
-										</article>
-										<article>
-											<a href="https://doi.org/10.1007/978-981-97-2004-0_10" class="image"><img src="images/bc.png" alt=""  style="width: 100%; height: 2%; object-fit: cover; border-radius: 10px;"/></a>
-											<h3>Enhancing KYC Verification: A Secure and Efficient Approach Utilizing Blockchain Technology</h3>
-										</article>
-									</div>
-								</section>
-						</div>
-					</div>
-					
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
+<!-- ── ABOUT ──────────────────────────────── -->
+<div id="about">
+  <div class="about-inner">
+    <div class="about-text">
+      <p class="section-label reveal">About me</p>
+      <h2 class="reveal reveal-delay-1">A little about<br /><em>who I am</em></h2>
+      <p class="reveal reveal-delay-2">
+        I'm a Master's student at the University of Southern California, diving deep into Computer Science with a focus on AI, distributed systems, and autonomous systems. Before USC, I spent over a year at JP Morgan Chase as a Software Engineer, building LLM-powered pipelines, cloud data infrastructure, and anomaly detection systems.
+      </p>
+      <p class="reveal reveal-delay-2">
+        I'm passionate about the kind of technology that quietly transforms how people work : systems that are fast, resilient and a little bit magical under the hood. Whether it's a multi-agent AI system or a robotics motion planner, I love the craft of building things that actually work in the real world.
+      </p>
+      
+    </div>
 
-							<!-- Search
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section> -->
+    <div class="about-stats">
+      <div class="stat-card reveal reveal-delay-1">
+        <span class="stat-num">1+</span>
+        <span class="stat-label">Years at JP Morgan Chase</span>
+      </div>
+      <div class="stat-card reveal reveal-delay-2">
+        <span class="stat-num">12+</span>
+        <span class="stat-label">Projects shipped</span>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <span class="stat-num">2</span>
+        <span class="stat-label">Research publications</span>
+      </div>
+      <div class="stat-card reveal reveal-delay-4">
+        <span class="stat-num">9.09</span>
+        <span class="stat-label">GPA at PES University</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<!-- <li><a href="elements.html">Elements</a></li> -->
-										<li>
-											<span class="opener">Projects</span>
-											<ul>
-												<li><a href="https://github.com/nisargabhaskar/aura">AURA</a></li>
-												<li><a href="https://github.com/nisargabhaskar/3DSceneRec">3DSceneRec</a></li>
-												<li><a href="https://github.com/nisargabhaskar/zollars">Zollars</a></li>
-												<li><a href="https://github.com/nisargabhaskar/BlogIT">BlogIT</a></li>
-												<li><a href="https://github.com/nisargabhaskar/CleaningRobot">CleaningRobot</a></li>
-												<li><a href="https://github.com/nisargabhaskar/YAK">YAK</a></li>
-												<li><a href="https://github.com/nisargabhaskar/FoodOPS">FoodOPS</a></li>
-											</ul>
-										</li>
-										<li><a href="https://drive.google.com/file/d/1raFfLiMmE6HdtcIfoRST18NXrPZxquO0/view?usp=drive_link">Resume</a></li>
-										<li><a href="pomodoroclock.html">Pomodoro Clock</a></li>
-									</ul>
-								</nav>
+<!-- ── EXPERIENCE ─────────────────────────── -->
+<section id="experience">
+  <p class="section-label reveal">Where I've worked</p>
+  <h2 class="section-title reveal reveal-delay-1">Work Experience</h2>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>My publications</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="https://doi.org/10.1038/s41598-025-04428-z" class="image"><img src="images/hypergraph.png" alt="" /></a>
-											<p>A Hypergraph powered approach to Phenotype-driven Gene Prioritization and Rare Disease Prediction</p>
-										</article>
-										<article>
-											<a href="https://doi.org/10.1007/978-981-97-2004-0_10" class="image"><img src="images/bc.png" alt="" /></a>
-											<p>Enhancing KYC Verification: A Secure and Efficient Approach Utilizing Blockchain Technology</p>
-										</article>
-									</div>
-									<!-- <ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul> -->
-								</section>
+  <div class="timeline">
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Got a question, an idea, or just want to chat? I’d love to hear from you. Drop me a message, and let’s see what kind of cool things we can cook up together!</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="mailto:nisarga.bhaskar02@gmail.com">nisarga.bhaskar02@gmail.com</a></li>
-										<li class="icon solid fa-phone"><a href="tel:(213) 519-1910">(213) 519-1910</a></li>
-										<li class="icon solid fa-home">Los Angeles, California</li>
-									</ul>
-								</section>
+    <!-- SWE -->
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Software Engineer</div>
+            <div class="timeline-company">
+              <i class="fa-solid fa-building" style="margin-right:.4rem;color:var(--accent);"></i>
+              JP Morgan Chase · Full-time
+            </div>
+          </div>
+          <span class="timeline-date">Jul 2024 – Aug 2025</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Architected a multi-agent LLM system (GPT-4) that auto-generates SQL-based financial reports, cutting report generation time by <strong>90%</strong> and enabling adoption across 5+ middle office teams.</li>
+          <li>Designed a columnar data lake on AWS Lake Formation, Glue, and Athena, reducing operational costs by <strong>27%</strong> across 5+ financial product lines.</li>
+          <li>Built a time-series forecasting pipeline (ARIMA) for infrastructure memory usage using AWS EventBridge and Fargate, improving provisioning efficiency by <strong>30%</strong> through proactive auto-scaling.</li>
+        </ul>
+        <div class="skill-tags">
+          <span class="tag">LLM</span>
+          <span class="tag">Agentic AI</span>
+          <span class="tag">AWS</span>
+          <span class="tag">Terraform</span>
+          <span class="tag">ARIMA</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+    </div>
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; God knows. All rights reserved ig :)</p>
-								</footer>
+    <!-- Intern 2 -->
+    <div class="timeline-item reveal reveal-delay-1">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Software Engineer Intern</div>
+            <div class="timeline-company">
+              <i class="fa-solid fa-building" style="margin-right:.4rem;color:var(--accent);"></i>
+              JP Morgan Chase · Internship
+            </div>
+          </div>
+          <span class="timeline-date">Jan 2024 – Jun 2024</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Built a Random Forest anomaly detection system on AWS SageMaker achieving <strong>95% precision</strong>, improving post-trade valuation reliability by 87% through robust feature engineering.</li>
+          <li>Engineered scalable data preprocessing pipelines handling <strong>500K+ records</strong>, optimizing feature extraction and reducing data noise for downstream ML models.</li>
+        </ul>
+        <div class="skill-tags">
+          <span class="tag">Random Forest</span>
+          <span class="tag">SageMaker</span>
+          <span class="tag">Anomaly Detection</span>
+          <span class="tag">Feature Engineering</span>
+        </div>
+      </div>
+    </div>
 
-						</div>
-					</div>
+    <!-- Intern 1 -->
+    <div class="timeline-item reveal reveal-delay-2">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Software Engineer Summer Intern</div>
+            <div class="timeline-company">
+              <i class="fa-solid fa-building" style="margin-right:.4rem;color:var(--accent);"></i>
+              JP Morgan Chase · Internship
+            </div>
+          </div>
+          <span class="timeline-date">Jun 2023 – Jul 2023</span>
+        </div>
+        <ul class="timeline-bullets">
+          <li>Designed a semantic clustering pipeline for automated ticket triaging using NLP embeddings, achieving a silhouette score of 0.98 and reducing manual resolution time from 5 hours to 1 hour (<strong>80% reduction</strong>).</li>
+          <li>Led team participation in the <strong>AWS DeepRacer</strong> challenge, developing and optimizing RL models for autonomous driving — achieved <strong>Top 15 global ranking</strong>.</li>
+        </ul>
+        <div class="skill-tags">
+          <span class="tag">NLP</span>
+          <span class="tag">Reinforcement Learning</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Python</span>
+          <span class="tag">AWS DeepRacer</span>
+        </div>
+      </div>
+    </div>
 
-			</div>
+  </div>
+</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!-- ── PROJECTS ────────────────────────────── -->
+<div id="projects">
+  <div class="inner">
+    <p class="section-label reveal">What I've built</p>
+    <h2 class="section-title reveal reveal-delay-1">Projects</h2>
 
-	</body>
+    <div class="filter-tabs reveal reveal-delay-2">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="aiml">AI / ML</button>
+      <button class="filter-btn" data-filter="systems">Systems</button>
+      <button class="filter-btn" data-filter="robotics">Robotics</button>
+      <button class="filter-btn" data-filter="web">Web / Tools</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- AVSCode -->
+      <div class="project-card cat-web reveal" data-categories="web,aiml">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-code"></i></div>
+          <span class="project-name">Conductor</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">A full-stack AI-powered IDE enabling multi-agent code editing workflows across large codebases. Indexed 50K+ files with sub-100ms graph updates, with 5+ concurrent AI agents coordinating edits.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">Indexing</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Elk.js</span>
+              <span class="tag">Claude API</span>
+              <span class="tag">Gemini</span>
+            </div>
+            <a href="https://conductor-code.vercel.app/" target="_blank" rel="noopener" class="project-link">
+              Website <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- EtalAI -->
+      <div class="project-card cat-aiml reveal reveal-delay-1" data-categories="aiml,web">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <span class="project-name">EtalAI</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">AI-powered research assistant for analyzing and retrieving insights from 10K+ PDF documents. Reduced literature review time by 50% via automated summarization, chunking, and reranking pipelines.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">RAG</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+            </div>
+            <a href="https://github.com/nisargabhaskar/etalai" target="_blank" rel="noopener" class="project-link">
+              GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- YAK -->
+      <div class="project-card cat-systems reveal reveal-delay-2" data-categories="systems">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-server"></i></div>
+          <span class="project-name">YAK</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">A Kafka-inspired distributed messaging system built from scratch. Supports 10K+ messages/min at sub-50ms latency with 2× throughput improvement and fault-tolerant message delivery.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">Kafka</span>
+              <span class="tag">Python</span>
+              <span class="tag">Distributed</span>
+            </div>
+            <a href="https://github.com/nisargabhaskar/YAK" target="_blank" rel="noopener" class="project-link">
+              GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TraceLayer -->
+      <div class="project-card cat-systems reveal" data-categories="systems">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <span class="project-name">TraceLayer</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">A backend media verification system using watermarking, hashing, and verification receipts. Achieved 100% detection accuracy for tampered assets in controlled test environment, automating validation and cutting manual review by 70%.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">Lyria API</span>
+              <span class="tag">NanoBanana API</span>
+              <span class="tag">Top 20 in Google Deepmind Glitch Hackathon</span>
+            </div>
+            <a href="https://github.com/nisargabhaskar/tracelayer" target="_blank" rel="noopener" class="project-link">
+              GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chatroom -->
+      <div class="project-card cat-systems reveal reveal-delay-1" data-categories="systems,web">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-comments"></i></div>
+          <span class="project-name">Chatroom</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Real-time messaging platform supporting 100+ concurrent users with &lt;100ms message latency. Room-based messaging with session management, reduced delivery delays by 50% through event-driven architecture.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">Socket.IO</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Python</span>
+            </div>
+            <a href="https://github.com/nisargabhaskar/Chatroomsocketio" target="_blank" rel="noopener" class="project-link">
+              GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AURA -->
+      <div class="project-card cat-aiml reveal reveal-delay-2" data-categories="aiml">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-wave-square"></i></div>
+          <span class="project-name">AURA</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">AI assistant to monitor network KPIs and detect anomalies like traffic spikes and DDoS-like patterns. Continuous KPI ingestion pipeline reduced manual monitoring effort by 60% through NL querying.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">LLM APIs</span>
+              <span class="tag">Data Pipelines</span>
+            </div>
+            <a href="https://github.com/nisargabhaskar/aura" target="_blank" rel="noopener" class="project-link">
+              GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Afterglow -->
+      <div class="project-card cat-web reveal" data-categories="aiml,web">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-chart-area"></i></div>
+          <span class="project-name">Afterglow</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Behavioral analytics story platform for exploring user viewing behavior across time, content, and engagement. Narrative-driven visualizations reduced analysis time from 2 hours to 30 minutes (75%).</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">SQL</span>
+            </div>
+            <a href="https://github.com/nisargabhaskar/afterglow" target="_blank" rel="noopener" class="project-link">
+              GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6D Pose Estimation -->
+      <div class="project-card cat-robotics reveal reveal-delay-1" data-categories="robotics">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-cube"></i></div>
+          <span class="project-name">6D Pose Estimation</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Computer vision pipeline for robotic pose estimation using deep learning and sensor fusion. Improved pose accuracy (ADD-S) by 28% and reduced inference latency by 57% using TensorRT acceleration.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">ROS2</span>
+            </div>
+            <a href="https://github.com/nisargabhaskar/6Dpose" target="_blank" rel="noopener" class="project-link">
+              GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TampIt -->
+      <div class="project-card cat-robotics reveal reveal-delay-2" data-categories="robotics">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+          <span class="project-name">TampIt</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Task and motion planning framework for robotic manipulation. Improved planning success rate by 31% through optimized search and reduced execution time by 22% via efficient trajectory planning.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">ROS2</span>
+              <span class="tag">MoveIt</span>
+            </div>
+            <a href="https://github.com/nisargabhaskar/tampit" target="_blank" rel="noopener" class="project-link">
+              GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RL Grasping -->
+      <div class="project-card cat-robotics reveal" data-categories="robotics,aiml">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-hand"></i></div>
+          <span class="project-name">RL for Robotic Grasping</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">RL system for adaptive robotic grasping of unknown objects. Achieved 85% grasp success rate (+27% over baseline) and reduced training convergence time by 35% through reward shaping.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">PPO</span>
+              <span class="tag">Python</span>
+              <span class="tag">RL</span>
+            </div>
+            <a href="https://github.com/nisargabhaskar/GraspIt" target="_blank" rel="noopener" class="project-link">
+              GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diffusion Trajectory -->
+      <div class="project-card cat-robotics reveal reveal-delay-1" data-categories="robotics,aiml">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-route"></i></div>
+          <span class="project-name">Diffusion Trajectory</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Diffusion-based trajectory generation system for robotic motion planning. Reduced trajectory collision rate by 29% and improved trajectory smoothness by 18% for safer, more efficient motion.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Diffusion Models</span>
+            </div>
+            <a href="https://colab.research.google.com/drive/1D69PwHGvgYZ2xcGFirasBtytzQ1YTX8l?usp=sharing" target="_blank" rel="noopener" class="project-link">
+              Notebook <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spam Detection -->
+      <div class="project-card cat-aiml reveal reveal-delay-2" data-categories="aiml">
+        <div class="project-header">
+          <div class="project-icon"><i class="fa-solid fa-filter"></i></div>
+          <span class="project-name">Spam Detection</span>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">Text classification system categorizing messages into spam, promotional, and legitimate classes. Achieved 90% accuracy and improved precision by 20%, reducing manual moderation effort by 60%.</p>
+          <div class="project-footer">
+            <div class="skill-tags">
+              <span class="tag">NLP</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Python</span>
+            </div>
+            <a href="https://github.com/nisargabhaskar/SpamNot" target="_blank" rel="noopener" class="project-link">
+              GitHub <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ── RESEARCH ────────────────────────────── -->
+<section id="research">
+  <p class="section-label reveal">Academic work</p>
+  <h2 class="section-title reveal reveal-delay-1">Research & Publications</h2>
+
+  <div class="research-grid">
+
+    <div class="research-card reveal">
+      <span class="research-badge badge-research"><i class="fa-solid fa-flask"></i> Research</span>
+      <div>
+        <div class="research-title">Multilingual LLM Benchmarking (Kannada & Aramaic)</div>
+        <div class="research-venue">Under Dr. Abeba Birhane · Dec 2024 – Feb 2025</div>
+      </div>
+      <p class="research-desc">Curated and preprocessed multilingual datasets for low-resource languages, benchmarking LLM performance. Fine-tuned transformer models achieving a 20% increase in fluency and contextual accuracy.</p>
+    </div>
+
+    <div class="research-card reveal reveal-delay-1">
+      <span class="research-badge badge-research"><i class="fa-solid fa-flask"></i> Research</span>
+      <div>
+        <div class="research-title">RL Agent with Signal Temporal Logic Constraints</div>
+        <div class="research-venue">USC — Prof. Jyotirmoy Deshmukh · Aug – Dec 2025</div>
+      </div>
+      <p class="research-desc">Designed a DQN + CNN RL agent incorporating STL specifications for safety and liveness. Achieved 90% task completion and 80% safety guarantees in simulated environments.</p>
+    </div>
+
+    <div class="research-card reveal reveal-delay-2">
+      <span class="research-badge badge-published"><i class="fa-solid fa-check-circle"></i> Published</span>
+      <div>
+        <div class="research-title">A Hypergraph Approach to Phenotype-driven Gene Prioritization</div>
+        <div class="research-venue">Scientific Reports · PES University, Jul 2023 – Dec 2024</div>
+      </div>
+      <p class="research-desc">Hypergraph-based gene prioritization model achieving 60% causal gene recall in top-200 (25% above SOTA) and 98% accuracy. Awarded Best Capstone Project in Medical Domain at PES University.</p>
+      <a href="https://doi.org/10.1038/s41598-025-04428-z" target="_blank" rel="noopener" class="research-link">
+        Read paper <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="research-card reveal reveal-delay-3">
+      <span class="research-badge badge-published"><i class="fa-solid fa-check-circle"></i> Published</span>
+      <div>
+        <div class="research-title">Enhancing KYC Verification via Blockchain Technology</div>
+        <div class="research-venue">Springer Nature · PESU C-ISFCR, Dec 2021 – Jul 2022</div>
+      </div>
+      <p class="research-desc">Distributed-ledger KYC system using smart contracts for secure, automated verification. Evaluated on 1,000+ customer records, achieving a 40% speedup over centralized KYC pipelines.</p>
+      <a href="https://doi.org/10.1007/978-981-97-2004-0_10" target="_blank" rel="noopener" class="research-link">
+        Read paper <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── SKILLS ──────────────────────────────── -->
+<div id="skills">
+  <div class="inner">
+    <p class="section-label reveal">Technical toolkit</p>
+    <h2 class="section-title reveal reveal-delay-1">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-label"><i class="fa-solid fa-code"></i> Languages</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">C++</span>
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">TypeScript</span>
+          <span class="skill-pill">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-delay-1">
+        <div class="skill-group-label"><i class="fa-solid fa-layer-group"></i> Frameworks & Tools</div>
+        <div class="skill-pills">
+          <span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">PyTorch</span>
+          <span class="skill-pill">Scikit-learn</span>
+          <span class="skill-pill">Kafka</span>
+          <span class="skill-pill">Spark</span>
+          <span class="skill-pill">Socket.IO</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-delay-2">
+        <div class="skill-group-label"><i class="fa-brands fa-aws"></i> Cloud & Infra</div>
+        <div class="skill-pills">
+          <span class="skill-pill">AWS</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">Kubernetes</span>
+          <span class="skill-pill">Terraform</span>
+          <span class="skill-pill">SageMaker</span>
+          <span class="skill-pill">Lake Formation</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-delay-3">
+        <div class="skill-group-label"><i class="fa-solid fa-database"></i> Databases</div>
+        <div class="skill-pills">
+          <span class="skill-pill">PostgreSQL</span>
+          <span class="skill-pill">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-label"><i class="fa-solid fa-brain"></i> AI / ML</div>
+        <div class="skill-pills">
+          <span class="skill-pill">LLMs</span>
+          <span class="skill-pill">Agentic AI</span>
+          <span class="skill-pill">RAG</span>
+          <span class="skill-pill">RL</span>
+          <span class="skill-pill">Diffusion Models</span>
+          <span class="skill-pill">NLP</span>
+          <span class="skill-pill">Time-Series</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-delay-1">
+        <div class="skill-group-label"><i class="fa-solid fa-terminal"></i> Dev Tools</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">Bitbucket</span>
+          <span class="skill-pill">Linux</span>
+          <span class="skill-pill">Cursor</span>
+          <span class="skill-pill">Claude Code</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── ACHIEVEMENTS ────────────────────────── -->
+<section id="achievements">
+  <p class="section-label reveal">Recognition</p>
+  <h2 class="section-title reveal reveal-delay-1">Achievements</h2>
+
+  <div class="achievements-grid">
+    <div class="achievement-card reveal">
+      <div class="achievement-icon"><i class="fa-solid fa-trophy"></i></div>
+      <div class="achievement-body">
+        <h3>DEVUP 2025</h3>
+        <p>Recognized for innovation in software engineering at JP Morgan Chase's annual technical conference — awarded for NLP-driven ticket triaging automation.</p>
+      </div>
+    </div>
+
+    <div class="achievement-card reveal reveal-delay-1">
+      <div class="achievement-icon"><i class="fa-solid fa-medal"></i></div>
+      <div class="achievement-body">
+        <h3>Prof. MRD Scholarship</h3>
+        <p>6-time awardee. 50% tuition waiver for consistently ranking in the top 5% of the cohort at PES University (GPA: 9.09/10).</p>
+      </div>
+    </div>
+
+    <div class="achievement-card reveal reveal-delay-2">
+      <div class="achievement-icon"><i class="fa-solid fa-code-branch"></i></div>
+      <div class="achievement-body">
+        <h3>Hackathon Highlights</h3>
+        <p>Best Venture Feasible Product — AI@USC × Good Vibes Only Buildathon. Top 20 — Google DeepMind Glitch Hackathon. Top 10 — Claude AI GRIDs Hackathon.</p>
+      </div>
+    </div>
+
+    <div class="achievement-card reveal reveal-delay-3">
+      <div class="achievement-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+      <div class="achievement-body">
+        <h3>Big Data Teaching Assistant</h3>
+        <p>Designed and delivered course materials on big data technologies; mentored 5 student teams through research and publication workflows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ─────────────────────────────── -->
+<div id="contact">
+  <div class="inner">
+    <p class="section-label reveal">Say hello</p>
+    <h2 class="section-title reveal reveal-delay-1">Get In Touch</h2>
+
+    <div class="contact-layout">
+      <div class="reveal">
+        <p class="contact-tagline">
+          Got a question, an idea, or just want to chat? I'd love to hear from you — drop me a message and let's see what cool things we can build together!
+        </p>
+        <div class="contact-items">
+          <a href="mailto:nisarga.bhaskar02@gmail.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>nisarga.bhaskar02@gmail.com</span>
+          </a>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Los Angeles, California</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-socials reveal reveal-delay-2">
+        <a href="https://www.linkedin.com/in/nisargabhaskar/" target="_blank" rel="noopener" class="social-link">
+          <i class="fa-brands fa-linkedin-in" style="color:#0077B5;"></i>
+          <div class="social-info">
+            <span class="social-name">LinkedIn</span>
+            <span class="social-handle">nisargabhaskar</span>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="https://github.com/nisargabhaskar" target="_blank" rel="noopener" class="social-link">
+          <i class="fa-brands fa-github" style="color:#333;"></i>
+          <div class="social-info">
+            <span class="social-name">GitHub</span>
+            <span class="social-handle">nisargabhaskar</span>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="https://www.instagram.com/nisarga.bhaskar/" target="_blank" rel="noopener" class="social-link">
+          <i class="fa-brands fa-instagram" style="color:#E1306C;"></i>
+          <div class="social-info">
+            <span class="social-name">Instagram</span>
+            <span class="social-handle">nisarga.bhaskar</span>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ──────────────────────────────── -->
+<footer>
+  <p class="footer-copy">© 2026 Nisarga Bhaskar</p>
+  <p class="footer-love">Built with way too much love</p>
+</footer>
+
+<!-- Blink animation for cursor -->
+<style>
+@keyframes blink { 50% { opacity: 0; } }
+</style>
+
+<script src="app.js"></script>
+</body>
 </html>
